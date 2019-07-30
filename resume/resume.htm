@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+		<link href="style.css" rel="stylesheet" media="all">
+	
+		<title>katelyn dever</title>
+
+</head>
+<body>
+	<div class="backgroundimg">
+		<div class="header">
+			<h1>resume</h1>
+		</div>
+				
+	</div>
+		
+
+<div class="wrapper">
+
+	<aside>	
+		<nav class="nav">
+				<div><a href="home.htm">home</a></div>
+				<div><a href="background.htm">background</a></div>
+				<div><a href="resume.htm">resume</a></div>
+				<div><a href="interests.htm">interests</a></div>
+				<div><a href="donate.htm">donate</a></div>
+		
+		</nav>
+	</aside>
+
+	<button class="accordion" id="button1">education<img class="plus"  alt="plus sign" src="img/plus.png"></button>
+	
+		<div class="panel">
+			<p class="rtitle"> middle georgia state university</p>
+			<p class="rscript">bachelor's of science in information technology,<br>
+								concentration in software engineering<br>
+								may 2020, 3.8 gpa</p>
+			<p class="rtitle">greenville technical college</p>
+			<p class="rscript">certification in expanded duty dental assisting<br>
+								& other applicable prerequisistes<br>
+								august 2012, 3.5 gpa</p>
+			<p class="rtitle">hillcrest high school</p>
+			<p class="rscript">diploma<br>
+								may 2008, 4.0 gpa </p>
+		</div>
+
+	
+		<button class="accordion" id="button2">applicable skills and qualifications<img class="plus" alt="plus sign" src="img/plus.png"></button>
+			<div class="panel">
+				<p class="rtitle">comptia security+ certification</p>
+				<p class="rscript">december 2018</p>
+				<p class="rtitle">mcsa: web applications</p>
+				<p class="rscript">june 2019</p>
+				<p class="rtitle">mcsd: app builder</p>
+				<p class="rscript">july 2019</p>
+				<p class="rtitle">oca: java</p>
+				<p class="rscript">december 2019</p>
+				<p class="rtitle">other proficiencies</p>
+				<p class="rscript"> html, css, javascript, microsoft office software, windows os</p>
+			</div>
+
+		<button class="accordion" id="button3">work history<img class="plus" alt="plus sign" src="img/plus.png"></button>
+			<div class="panel">
+				<p class="rtitle">self-employed/freelance</p>
+				<p class="rscript">woodworker, nanny, housekeeping, student, website developer<br>
+									sacramento ca, oswego il, long beach ca<br>
+									july 2015-present</p>
+				<p class="rtitle">orthodontic assistant</p>
+				<p class="rscript">wise orthodontics - frisco & mckinney, tx<br>
+									june 2014-july 2015</p>
+				<p class="rtitle">lead dental assistant</p>
+				<p class="rscript">daniel nickles dentistrty - greenville, sc<br>
+									august 2012-june 2014</p>
+				<p class="rtitle">preschool teacher</p>
+				<p class="rscript">sfbc child development center - simpsonville, sc<br>
+									february 2006 - august 2012</p>
+			</div>
+
+
+		<button class="accordion" id="button4">completed projects<img class="plus" src="img/plus.png" alt="plus sign"></button>
+			<div class="panel">
+				<p class="rtitle">web design and development</p>
+					<div class="responsive">
+						<div class="gallery">
+						<a target="_blank" href="img/cc.png">
+						<img src="img/cc.png" alt="Cabin Club Band Website">
+						</a>
+						<div class="desc">Cabin Club Band Website</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+						 <a target="_blank" href="img/SR.png">
+							<img src="img/SR.png" alt="Super Restaurant Website">
+						</a>
+						 <div class="desc">Super Restaurant Website</div>
+							</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+						 <a target="_blank" href="img/kmp.png">
+							<img src="img/kmp.png" alt="Keith Michael Plumbing Website">
+						</a>
+						<div class="desc">Keith Michael Plumbing Website</div>
+							</div>
+					</div>
+					<div class="clearfix"></div>
+					<br>
+				<p class="rtitle">woodworking</p>
+				<div class="responsive">
+					<div class="gallery">
+					 <a target="_blank" href="img/furniture1.jpg">
+						<img src="img/furniture1.jpg" alt="Custom Round Breakfast Table">
+					</a>
+					<div class="desc">Custom Round Breakfast Table</div>
+						</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+					<a target="_blank" href="img/furniture2.JPG">
+						<img src="img/furniture2.JPG" alt="Custom Sofa Table/Bar">
+					</a>
+					<div class="desc">Custom Sofa Table/Bar</div>
+						</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+					<a target="_blank" href="img/furniture3.JPG">
+						<img src="img/furniture3.JPG" alt="Custom Dining Table">
+					</a>
+					<div class="desc">Custom Dining Table</div>
+						</div>
+				</div>
+				<div class="clearfix"></div>
+
+
+			</div>
+		
+	
+<main>
+	
+	
+	
+	
+</main>
+
+<footer>
+		<div class="center">
+		contact at <a href="mailto:katelyn.dever@gmail.com">katelyn.dever@gmail.com</a><br>
+		<a href="siteindex.html">site index</a>
+		</div>
+
+</footer>
+	</div><!--END WRAPPER-->
+	
+	
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>

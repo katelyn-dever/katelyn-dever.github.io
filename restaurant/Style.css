@@ -1,0 +1,287 @@
+/*
+Katelyn Dever
+Fall 2018
+Midterm Website
+
+Color Scheme:
+Dark Gray:  #393D3F
+Bright Green: #85B255
+Light Green/Beige: #EDEEC9
+Plum: #873368
+White: #FFFFFF
+
+*/
+/* Universal Styles */
+@media all {
+	body 	{	background-color: #393D3F;
+			margin:30px; 
+			font-family:calibri;
+			color: #393D3F;
+			font-size:1.2em;
+			}
+	.wrapper {	margin:0 auto;
+			background-color:#EDEEC9;
+			border-color: #873368;
+			border-style:solid;
+			border-width: 8px;
+			padding: 20px;
+			padding-top: 40px;
+			width: 85%;
+			min-height: 900px;
+			}
+	h1		{	text-align:center;
+			font-size: 3em;
+			text-shadow: 2px 2px #85B255;
+
+			}	
+	h2		{text-align: center;
+			font-size:2em;
+			text-shadow: 2px 2px #85B255;
+			text-decoration: underline;
+			}
+	h3		{text-align: center;
+			font-size: 1.4em;
+			color:#873368;
+			font-style:italic;
+			}
+	hr		{	height:3px;
+            width:95%;
+            background-color:#85B255;
+            text-align:center;
+			margin-top: 1%;
+			margin-bottom: 2%;
+			}
+	.clear 	{	clear:both;
+			}
+	img:hover {opacity: .5;}
+	footer	{display: block;
+			background-color:#873368;
+			color:#EDEEC9;
+			text-align:center;
+			padding: 18px;
+			margin: 0 auto;
+			width:95%;
+			}
+	
+		
+/* Navigation */
+			
+	ul {list-style-type: none;
+		margin: 0 auto;
+		padding: 18px;
+		overflow: hidden;
+		background-color: #873368;
+		position: fixed;
+		width:95%;
+		top:0;
+		}
+	li {display: inline;
+		float:right;
+		text-align: center;
+		}
+		
+	a:hover {background-color: #393D3F;
+			}
+	a:link { color: #FFFFFF;
+			text-decoration:none;
+			padding: 15px;
+			}
+
+	a:visited { color: #EDEEC9;
+			}
+#top 	{background-color:#873368;
+		}
+#bottom {background-color:#873368;
+		}
+
+
+
+
+/* Home */
+	#logo 	{	display:block;
+				margin:auto;
+				width:15%;
+				padding: 15px;
+				border-radius:20%;
+				display:block;
+			
+			}
+	#main 	{	display: block;
+				margin: auto;
+				width: 40%;
+				max-width: 500px;
+				border: #873368;
+				border-style: solid;
+				border-width: medium;
+				padding: 5px;
+			}
+			
+/* TABLE on Home */
+#specials 	{overflow-x:auto;
+				}	
+	table 	{	border:solid 2px;
+				border:ridge;
+				border-color: #873368;
+				width: 70%;
+				margin:0 auto;
+				text-align: center;
+				background-color: #85B255;
+				font-size: 24px;
+				}
+	td		{	border: solid 1px;
+			}
+	th		{	border: solid 1px;
+			}
+	table caption {font-weight: bold;
+					font-size: 1em;
+				}
+	thead	{	text-align:center;
+				padding:2px;
+			}
+	tbody    {	text-align: center;
+				padding: 2px;
+			}
+	tfoot	{ 	text-align: center;
+				padding: 2px;
+			}
+
+
+
+
+/* About */
+.text 	{	margin:0 auto;
+			width:85%;
+			text-align:justify;
+			font-size: 1em;
+			}
+.aboutpic 	{float: left;
+			width: 33%;
+			margin-right: 15px;
+			margin-bottom: 25px;
+			border: #873368;
+			border-style: solid;
+			border-width: medium;
+			padding: 5px;
+		}
+.name	{	color:#873368;
+			font-family:Aharoni;
+			font-weight: bold;
+			font-style: italic;
+			font-size:1.3em;
+		}
+
+
+
+
+/* Coupons */
+.coupon { 	display:block;
+			max-width: 85%;
+			margin: 0 auto;
+			padding: 25px;
+		
+			}
+
+
+
+
+
+/* Menu */
+#menu	{	display: block;
+			margin: auto;
+			margin-bottom: 25px;
+			width: 80%;
+			max-width: 750px;
+			border: #873368;
+			border-style: solid;
+			border-width: medium;
+			padding: 5px;
+			}
+
+
+.menupic 	{max-width: 350px;
+			padding-bottom: 15px;
+			}
+.columnleft	{float: left;
+			padding:10px;
+			width: 30%;
+			height:80%;
+			max-height: 950px;
+			overflow-x:auto;
+			border: #873368;
+			border-style: solid;
+			border-width: medium;
+			margin-bottom: 25px;
+		 }
+.columnright	{float:left;
+				width: 65%;
+				padding: 10px;
+				text-align:center;
+				margin-bottom: 25px;
+			}
+.menuitem { font-size:1em;
+			font-weight:bold;
+			}
+.menudetail {font-size:.8em;
+			font-style:italic;
+			}
+
+/* HoursLocation */
+#hours	{		float:left;
+				margin: auto;
+				margin-left: 20px;
+				width: 40%;
+				max-width: 500px;
+				border: #873368;
+				border-style: solid;
+				border-width: medium;
+				padding: 5px;
+				margin-bottom: 25px;
+			}
+.center	{text-align:center;}
+
+
+
+
+
+
+
+}
+/* Responsive Design */
+@media only screen and (max-width:600px) {
+
+	.nav {float:none; 
+		position: static; 
+		text-align:center;
+		margin-left:2%;
+		margin-right:2%;
+		max-width:95%;
+		}
+	.content {margin-left: 2%;
+			margin-right: 2%;}
+	.columnleft {float:none;
+				display:block;
+				width:100%;
+				border:none;}
+	.columnright{float:none;
+				width:100%;
+	}
+	#hours {float:none;
+			display:block;
+			min-width:200px;}
+}
+
+/* Print */
+@media only print
+ {			h1 {	color:#000000;}
+			h2 {	color:#000000;}
+			body {	background-color:#FFFFFF;
+					width:100%;
+				}
+			li {	float:none;				
+					width: 100%;
+					position: static;}
+			.wrapper {	width: 100%; 
+						background-color:#FFFFFF;
+						border:none;}
+			table {border: #000000;}
+ }

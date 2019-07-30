@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+		<link href="style.css" rel="stylesheet" media="all">
+		
+		<title>katelyn dever</title>
+
+</head>
+<body>
+<div class="backgroundimg">
+		<div class="header">
+		
+			<h1>donate</h1>
+		</div>
+	</div>
+	
+<div class="wrapper">
+
+	<aside>	
+		<nav class="nav">
+				<div><a href="home.htm">home</a></div>
+				<div><a href="background.htm">background</a></div>
+				<div><a href="resume.htm">resume</a></div>
+				<div><a href="interests.htm">interests</a></div>
+				<div><a href="donate.htm">donate</a></div>
+		
+		</nav>
+	</aside>
+	
+<main>
+
+<div class="first">
+<form class="donationform">
+
+  <fieldset>
+    <legend>Credit Card Information:</legend>
+	<div>
+			Title<br>
+			<input type="radio" name="title" id="Mr" value="Mr">
+			<label for="Mr">Mr.</label><br>
+			<input type="radio" name="title" id="Mrs" value="Mrs">
+			<label for="Mrs">Mrs.</label><br>
+			<input type="radio" name="title" id="Ms" value="Ms.">
+			<label for="Ms">Ms.</label><br>
+
+    </div>
+	<div>
+		<label for="txtFirst">First Name</label><br>
+		<input type="text" id="txtFirst" required><br>
+	</div>
+	<div>
+		<label for="txtLast">Last Name</label><br>
+		<input type="text" id="txtLast" required><br>
+	</div>
+	<div>	
+		<label for="txtEmail">Email Address</label><br>
+		<input type="email" id="txtEmail" required><br>
+	</div>
+	<div>	
+		<label for="date">Date</label><br>
+		<input type="date" id="date"><br>
+	</div>
+	<div>	
+		<label for="phoneType">Phone Type</label><br>
+		<select id="phoneType">
+			<option value="Home">Home</option>
+			<option value="Mobile">Mobile</option>
+			<option value="Work">Work</option>
+		</select><br>
+	</div>
+	<div>	
+		<label for="txtPhone">Phone Number</label><br>
+		<input type="text" id="txtPhone" maxlength="10" required><br>
+	</div>
+	<div>	
+		<label for="numberPrice">Price</label><br>
+		<input type="number" id="numberPrice" placeholder="10.00" min="0.00" 
+		max="1000.00" step="10.00"><br>
+	</div>
+	<div>	
+		<label for="txtCC">Credit Card Number</label><br>
+		<input type="text" id="txtCC" maxlength="16" required><br>
+	</div>
+	<div>	
+		<label for="txtSec">Security Code</label><br>
+		<input type="text" id="txtSec" maxlength="4" required><br>
+	</div>
+	<div>	
+		<label for="checkAgree">Agree to Terms</label>
+		<input type="checkbox" id="checkAgree" required>
+	</div>
+		
+	
+			
+    <br><br>
+    <input type="submit" value="Submit">
+	<input type="Reset">
+  </fieldset>
+</form>
+
+</div>
+
+	
+</main>
+<footer>
+		<div class="center">
+		contact at <a href="mailto:katelyn.dever@gmail.com">katelyn.dever@gmail.com</a><br>
+		<a href="siteindex.html">site index</a>
+		</div>
+
+</footer>
+	</div><!--END WRAPPER-->
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="myScript.js"></script>
+	
+		
+</body>
+</html>
