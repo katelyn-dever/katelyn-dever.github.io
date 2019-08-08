@@ -68,7 +68,7 @@ gray: #b8b8b8
                 margin: 0 auto;
                 height: 50%;
                 min-height:600px;
-                background-image: url(/images/K9-1.jpg);
+                background-image: url("K9-1.jpg");
                 background-size: cover;
                 background-attachment: fixed;
                 background-position: center;
