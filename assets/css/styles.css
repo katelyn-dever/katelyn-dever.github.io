@@ -1,5 +1,15 @@
 /*General Styles*/
 
+/* Colors
+
+Light orange : #FB9E34
+Dark orange : #CF6C0F
+Black : #14080E
+White: #FFFFFF
+Beige : #C2BAAF
+
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -31,7 +41,7 @@ a.btn {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
-	background-color: #3f51b5;
+	background-color: #14080E;
 	opacity: 1;
 }
 
@@ -56,13 +66,12 @@ section:not(.hero):nth-child(even) {
 hr {
 	width: 250px;
 	height: 3px;
-	background-color: #3f51b5;
+	background-color: #CF6C0F;
 	border: 0;
 	margin-bottom: 50px;
 }
 
 section h3.title {
-	text-transform: capitalize;
 	font: bold 32px "Open Sans", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
@@ -103,7 +112,7 @@ header {
 }
 
 header h2 {
-	font-family: "Quicksand", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 header nav {
@@ -127,6 +136,9 @@ header nav li {
 }
 
 /*Hero Styles*/
+#meet {
+	padding: 50px;
+}
 
 .hero {
 	position: relative;
@@ -144,7 +156,7 @@ header nav li {
 	height: 100%;
 	background-size: cover;
 	z-index: -1;
-	background-color: #80a3db;
+	background-color: #FB9E34;
 }
 
 .hero h1 {
@@ -194,6 +206,120 @@ header nav li {
 
 /*Destinations Section*/
 
+
+.flipCard {
+  -webkit-perspective: 800;
+  -ms-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
+   width: 95%;
+   height: 400px;
+   position: relative;
+   margin: 50px auto;
+}
+.flipCard .card.flipped {
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+.flipCard .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.flipCard .card .side {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  backface-visibility: hidden;  /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  overflow: auto;
+}
+.flipCard .card .back {
+  background: white;
+  color: black;
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+
+.flipCard .card .front {
+  font-family: Montserrat;
+  text-align: center;
+  background-color: #14080E;
+  border: 3px double #CF6C0F;
+  color: white;
+
+}
+.flipCard .card .back {
+  background-color: #FB9E34;
+  border: 3px solid white;
+  text-align: center;
+  color: #14080E;
+  font-family: Montserrat;
+}
+
+.flipCard .project_title {
+	font-size: 1.5em;
+	padding-top: 25px;
+}
+
+.flipCard hr {
+	height: 4px;
+	border-style: solid;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color:#CF6C0F;
+}
+
+.flipCard .project_summary {
+	font-size: .9em;
+	margin: 5px;
+}
+
+.flipCard a.btn {
+	background-color: #CF6C0F;
+	padding: 10px;
+	margin: 25px;
+	display:block;
+}
+
+.flipCard .project_tech {
+	font-size: 1.5em;
+	padding-top: 25px;
+}
+
+.flipCard .project_tech_summary {
+	font-size: 1.2em;
+
+}
+
+
+
+
+
+
 .destinations .grid li {
 	height: 350px;
 	padding: 20px;
@@ -203,7 +329,7 @@ header nav li {
 }
 
 .destinations .grid li.small {
-	flex-basis: 30%;
+	flex-basis: 25%;
 }
 
 .destinations .grid li.large {
@@ -213,7 +339,7 @@ header nav li {
 @media (max-width: 1100px) {
 	.destinations .grid li.small,
 	.destinations .grid li.large {
-		flex-basis: 50%;
+		flex-basis: 80%;
 	}
 }
 
