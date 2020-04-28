@@ -213,7 +213,7 @@ header nav li {
   -moz-perspective: 800;
   -o-perspective: 800;
    width: 95%;
-   height: 400px;
+   height: 100%;
    position: relative;
    margin: 50px auto;
 }
