@@ -2,11 +2,13 @@
 
 /* Colors
 
-Light orange : #FB9E34
-Dark orange : #CF6C0F
-Black : #14080E
-White: #FFFFFF
-Beige : #C2BAAF
+Darkest Blue: #1B1B3A;
+Purple Navy: #404E7C;
+Lilac: #BE97C6;
+Russian Violet: #451F55;
+Light Gray: #E6E5E9;
+White: #FFF;
+Black: #000;
 
 */
 
@@ -20,9 +22,11 @@ html {
 	font: normal 16px sans-serif;
 	color: #555;
 }
+body {
+	width: 100%;
+}
 
-ul,
-nav {
+ul {
 	list-style: none;
 }
 
@@ -33,7 +37,7 @@ a {
 }
 
 a:hover {
-	opacity: 1;
+	color: #E6E5E9;
 }
 
 a.btn {
@@ -41,7 +45,7 @@ a.btn {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
-	background-color: #14080E;
+	background-color: #451F55;
 	opacity: 1;
 }
 
@@ -53,7 +57,7 @@ section {
 }
 
 section:not(.hero):nth-child(even) {
-	background-color: #f5f5f5;
+	background-color: #E6E5E9;
 }
 
 .grid {
@@ -66,13 +70,13 @@ section:not(.hero):nth-child(even) {
 hr {
 	width: 250px;
 	height: 3px;
-	background-color: #CF6C0F;
+	background-color: #451F55;
 	border: 0;
 	margin-bottom: 50px;
 }
 
 section h3.title {
-	font: bold 32px "Open Sans", sans-serif;
+	font: bold 32px "Montserrat", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
 }
@@ -91,18 +95,46 @@ section p {
 	}
 }
 
-/*Header Styles*/
+/* Navigation */
 
-header {
-	position: absolute;
+
+.navbar {
+	background-color: #404E7C;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	position: absolute;
+	margin-top:0;
+	padding: 10px 0 10px 50px;
+	display:flex;
 	align-items: center;
-	padding: 35px 100px 0;
-	animation: 1s fadein 0.5s forwards;
+	animation: 1s fadein 0.3s forwards;
 	opacity: 0;
 	color: #fff;
+}
+
+.navbar > ul {
+	display:flex;
+}
+
+.navbar > ul > li {
+	padding: 20px;
+}
+
+@media all and (max-width: 600px) {
+	.navbar {
+		flex-wrap: wrap;
+		display: relative;
+	}
+
+	.navbar > a {
+		flex-basis: 50%;
+	}
+}
+
+@media all and (max-width: 400px) {
+
+	.navbar > a {
+		flex-basis: 100%;
+	}
 }
 
 @keyframes fadein {
@@ -111,34 +143,9 @@ header {
 	}
 }
 
-header h2 {
-	font-family: "Montserrat", sans-serif;
-}
 
-header nav {
-	display: flex;
-	margin-right: -15px;
-}
-
-header nav li {
-	margin: 0 15px;
-}
-
-@media (max-width: 800px) {
-	header {
-		padding: 20px 50px;
-		flex-direction: column;
-	}
-
-	header h2 {
-		margin-bottom: 15px;
-	}
-}
 
 /*Hero Styles*/
-#meet {
-	padding: 50px;
-}
 
 .hero {
 	position: relative;
@@ -153,24 +160,24 @@ header nav li {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-size: cover;
 	z-index: -1;
-	background-color: #FB9E34;
+	background-color: #1B1B3A;
 }
 
 .hero h1 {
-	font: bold 60px "Open Sans", sans-serif;
-	margin-bottom: 15px;
+	font: bold 60px "Montserrat", sans-serif;
+	margin-bottom: 10px;
 }
-
-.hero h3 {
-	font: normal 28px "Open Sans", sans-serif;
-	margin-bottom: 40px;
+.hero h2 {
+	font: normal 28px "Monterrat", sans-serif;
+	padding-bottom: 50px;
 }
 
 .hero a.btn {
-	padding: 20px 46px;
+	padding: 20px 50px;
+
 }
 
 .hero-content-area {
@@ -204,123 +211,13 @@ header nav li {
 	}
 }
 
-/*Destinations Section*/
-
-
-.flipCard {
-  -webkit-perspective: 800;
-  -ms-perspective: 800;
-  -moz-perspective: 800;
-  -o-perspective: 800;
-   width: 95%;
-   height: 100%;
-   position: relative;
-   margin: 50px auto;
-}
-.flipCard .card.flipped {
-  transform:rotatey(-180deg);
-  -ms-transform:rotatey(-180deg); /* IE 9 */
-  -moz-transform:rotatey(-180deg); /* Firefox */
-  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
-  -o-transform:rotatey(-180deg); /* Opera */
-}
-.flipCard .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: 0.5s;
-  -ms-transform-style: preserve-3d;
-  -ms-transition: 0.5s;
-  -o-transform-style: preserve-3d;
-  -o-transition: 0.5s;
-  transform-style: preserve-3d;
-  transition: 0.5s;
-}
-.flipCard .card .side {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 2;
-  backface-visibility: hidden;  /* W3C */
-  -webkit-backface-visibility: hidden; /* Safari & Chrome */
-  -moz-backface-visibility: hidden; /* Firefox */
-  -ms-backface-visibility: hidden; /* Internet Explorer */
-  -o-backface-visibility: hidden; /* Opera */
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  overflow: auto;
-}
-.flipCard .card .back {
-  background: white;
-  color: black;
-  transform:rotatey(-180deg);
-  -ms-transform:rotatey(-180deg); /* IE 9 */
-  -moz-transform:rotatey(-180deg); /* Firefox */
-  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
-  -o-transform:rotatey(-180deg); /* Opera */
-}
-
-.flipCard .card .front {
-  font-family: Montserrat;
-  text-align: center;
-  background-color: #14080E;
-  border: 3px double #CF6C0F;
-  color: white;
-
-}
-.flipCard .card .back {
-  background-color: #FB9E34;
-  border: 3px solid white;
-  text-align: center;
-  color: #14080E;
-  font-family: Montserrat;
-}
-
-.flipCard .project_title {
-	font-size: 1.5em;
-	padding-top: 25px;
-}
-
-.flipCard hr {
-	height: 4px;
-	border-style: solid;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	color:#CF6C0F;
-}
-
-.flipCard .project_summary {
-	font-size: .9em;
-	margin: 5px;
-}
-
-.flipCard a.btn {
-	background-color: #CF6C0F;
-	padding: 10px;
-	margin: 25px;
-	display:block;
-}
-
-.flipCard .project_tech {
-	font-size: 1.5em;
-	padding-top: 25px;
-}
-
-.flipCard .project_tech_summary {
-	font-size: 1.2em;
-
-}
 
 
 
 
+/* Portfolio Section*/
 
-
-.destinations .grid li {
+.portfolio .grid li {
 	height: 350px;
 	padding: 20px;
 	background-clip: content-box;
@@ -328,73 +225,57 @@ header nav li {
 	background-position: center;
 }
 
-.destinations .grid li.small {
+.portfolio .grid li.small {
 	flex-basis: 25%;
 }
 
-.destinations .grid li.large {
+.portfolio .grid li.large {
 	flex-basis: 70%;
 }
 
 @media (max-width: 1100px) {
-	.destinations .grid li.small,
-	.destinations .grid li.large {
+	.portfolio .grid li.small,
+	.portfolio .grid li.large {
 		flex-basis: 80%;
 	}
 }
 
 @media (max-width: 800px) {
-	.destinations .grid li.small,
-	.destinations .grid li.large {
+	.portfolio .grid li.small,
+	.portfolio .grid li.large {
 		flex-basis: 100%;
 	}
 }
 
-/*Packages Section*/
+/* Resume Section */
 
-.packages .grid li {
+.resume .grid li {
 	padding: 50px;
 	flex-basis: 50%;
 	text-align: center;
 }
 
-.packages .grid li i {
-	color: #8c9eff;
+.resume .grid li i {
+	color: #BE97C6;
 }
 
-.packages .grid li h4 {
+.resume .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
 }
 
+.resume .grid h5 {
+	font-size: 20px;
+}
+
 @media (max-width: 800px) {
-	.packages .grid li {
+	.resume .grid li {
 		flex-basis: 100%;
 		padding: 20px;
 	}
 }
 
-/*Testimonials Section*/
-
-.testimonials .quote {
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 1.5;
-	margin: 40px 0 25px;
-}
-
-@media (max-width: 800px) {
-	.testimonials .quote {
-		font-size: 18px;
-		margin: 15px 0;
-	}
-
-	.testimonials .author {
-		font-size: 14px;
-	}
-}
-
-/*Contact Section*/
+/* Contact Section */
 
 .contact form {
 	display: flex;
@@ -423,13 +304,14 @@ header nav li {
 	}
 }
 
-/*Footer Section*/
+/* Footer */
+
 
 footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: #607d8b;
+	background-color: #1B1B3A;
 	color: #fff;
 	padding: 20px 0;
 }
@@ -440,6 +322,10 @@ footer ul {
 
 footer ul li {
 	margin-left: 16px;
+}
+
+footer ul li i{
+	color: #BE97C6;
 }
 
 footer p {
