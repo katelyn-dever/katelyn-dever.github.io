@@ -228,8 +228,9 @@ section h3.title {
 /* Portfolio Section */
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
+	max-width: 1100px;
+	width:100%;
+  	margin: 0 auto;
 }
 
 .gallery {
@@ -342,23 +343,29 @@ h5 {
 
 /*  About */
 
-.about-item {
+.about-item p {
+	font-size: 18px;
+	font-weight: 200;
+	padding:10px;
+}
+
+.gallery .about-item {
 	margin:20px;
 	text-align: center;
 	min-height: 400px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width: 60%;
 }
 
-.about-item .small {
-	width: 400px;
-}
+.gallery .about-item img {
+  display:block;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right:auto;
+  padding-bottom: 30px;
+  border-radius: 50%;
 
-.about-item .large{
-	width: 600px;
-}
-
-.about-item img {
-  position: absolute;
-  width: 320px;
 }
 
 
