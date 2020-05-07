@@ -1,0 +1,310 @@
+/* Katelyn Dever
+Cabin Club Website
+
+Colors:
+almost black: #262626
+white: #FFFFFF
+gray: #b8b8b8
+
+
+*/
+
+/*  Fonts  */
+/* main font */
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Condensed Light Italic'), local('OpenSansCondensed-LightItalic'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NHdQDnbTkabZAIOl9il_O6KJj73e7Fd_-7suD8Rb2V.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMRw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMRw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @media all {
+
+
+/* All Pages */
+    html, body
+    {
+                min-width:100%;
+                max-width:100%;
+                overflow-x:hidden;
+                height:100%;
+                width:100%;
+                margin: 0;
+    }
+    body
+    {
+                font-family:"Open Sans Condensed", courier;
+                color: #ffffff;
+                background-color: #262626;
+                font-size: 1.2em;
+                margin: 0 auto;
+            
+    }
+    h1
+    {
+                font-family: "Open Sans Condensed", courier;
+                color: #ffffff;
+                font-size: 1.5em;
+                font-style:bold;
+    }
+
+    .parallax
+    {           
+                margin: 0 auto;
+                height: 50%;
+                min-height:600px;
+                background-image: url(K9-1.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+    }
+    .logo
+    {
+                float: right;
+                width: 25%;
+                height: auto;
+                padding: 25px;
+    }
+    .wrapper 	
+    {	
+                background-color: #262626;
+                margin: 0 auto;
+                width: 100%;
+                padding: 10px;
+    }	
+    .clear		
+    { 	
+                clear:both;
+    }
+
+
+/* Navigation */
+
+    .navbar 
+    {		    
+                height: 10%;
+                display:flex;
+                flex-direction: row;
+                align-items: left;
+                margin: 0 auto;
+                position: relative;
+                background-color:#262626;	
+
+    }
+
+    .navbar a 
+    {		
+                color:#ffffff;
+                text-align: left;
+                text-decoration: none;
+                font-size: 1.2em;
+                padding: 5px;
+    }
+
+    .navbar a:hover
+    {
+                color: #b8b8b8;
+    }
+    .navbar a.active 
+    {	
+                color: #b8b8b8;
+    }
+
+/* Home Page */
+    #aboutParagraphs 
+    {
+                float: right;
+                margin-left: 30%;
+                margin-right: 5%;
+                justify-content: center;
+                text-align:justify;
+
+
+    }
+
+/* Music Page */
+    #musicBox
+    {
+                display:block;
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+    }
+/*Media Page */
+    #photoBox
+    {
+                margin-left:30%;
+                margin-top: 20px;
+                position:relative;
+                box-sizing: border-box;
+                width: 70%;
+
+    }
+    .row 
+    {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 2px;	
+    }
+    .column
+    {		
+                flex:49%;
+                max-width: 49%;
+                padding: 0 2px;
+                align-items: stretch;
+
+    }
+    .column img 
+    {	
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+    }
+
+/* Shows Page */
+    #showsBox
+    {
+                width: 50%;
+                display: block;
+                margin-left: 35%;
+                padding: 10px;
+               
+    }
+    .showdate
+    {
+                font-size: 1.5em;
+                font-style:bold;
+    }
+    .showvenue
+    {
+                font-size: 1.5em;
+                font-style:italic;
+    }
+    .showdetails
+    {
+               
+    }
+    .showdetails a
+    {
+                color:#ffffff;
+                text-decoration: none;
+    }
+/*Footer */
+    .social 
+    {
+                width: 25px;
+                height: 25px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                padding: 5px;
+    }
+    .socialbox
+    {
+                float:left;
+                position:relative;
+    }
+
+/* Contact Page */
+    #contactBox
+    {
+                margin-left: 30%;
+    }
+    #contactBox a
+    {
+                text-decoration:none;
+                color:#FFFFFF;
+    }
+}
+/* Responsive Design */
+@media only screen and (max-width:600px){
+    .parallax
+    {           
+                height:60%;
+                min-height: 300px;
+                background-image: url(images/K9-1.jpg);
+                background-size: contain;
+                background-attachment: scroll;
+                background-position: top;
+                background-repeat: no-repeat;
+    }
+    .logo
+    {
+                float:right;
+                width: 40%;
+                height: auto;
+                margin-top:;
+                padding: 0px;
+    }
+    .navbar 
+    {			
+                display: flex;
+                flex-direction:column;
+                position: relative;
+                width: 100%;
+                text-align:center;
+                justify-content:center;
+    }
+    .navbar a
+    {
+                text-align:center;
+    }
+    #aboutParagraphs 
+    {
+                float: none;
+                margin: 0 auto;
+                padding: 25px;
+                justify-content: center;
+    }
+    #musicBox
+    {
+                display:block;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+    }
+    #showsBox
+    {
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+               
+    }
+    #contactBox
+    {
+                margin: 0 auto;
+                width: 50%;
+                padding: 25px;
+    }
+    .column 
+    {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+        
+    }
+    #photoBox
+    {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 10px;
+                width: 98%;
+    }
+}
