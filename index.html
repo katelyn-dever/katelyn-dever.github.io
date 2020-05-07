@@ -7,7 +7,9 @@
   <link href="assets/js/script.js" type="text/JavaScript">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
+
 
 
 </head>
@@ -32,16 +34,16 @@
 
   </section> 
 
-<section class="wrapper">
+<div class="wrapper">
   <section id="portfolio">
-    <h3 class="title">portfolio</h3>
+    <h3 class="title" data-aos="fade-up">portfolio</h3>
     <hr>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="gallery">
-        <a class="gallery-item" href="assets/cabinClub/index.htm"><img src="assets/img/cabinclub.png" alt="Project Image">
+        <a class="gallery-item" href="assets/oceans/index.html"><img src="assets/img/4co.png" alt="Project Image">
           <span class="text-wrapper">
-            <span class="name">Cabin Club Website</span>
-            <span class="title">HTML/CSS, JavaScript, ReactJS, Firebase/NoSQL</span>
+            <span class="name">Oceans Website</span>
+            <span class="title">HTML/CSS, JavaScript, Bootstrap, JSON, Firebase/NoSQL</span>
           </span>
         </a>
         
@@ -69,10 +71,10 @@
   </section>
 
   <section id="resume">
-    <h3 class="title">Resume</h3>
+    <h3 class="title" data-aos="fade-up">Resume</h3>
     <hr>
     <div class="container">
-      <div class="gallery">
+      <div class="gallery" data-aos="fade-up">
         <div class="resume-item">
           <i class="fa fa-user-graduate"></i>
           <h3>EDUCATION</h3>
@@ -121,10 +123,10 @@
   </section>
 
   <section id="about">
-    <h3 class="title">About</h3>
+    <h3 class="title" data-aos="fade-up">About</h3>
     <hr>
     <div class="container">
-      <div class="gallery">
+      <div class="gallery" data-aos="fade-up">
         <div class="about-item">
           <img src="assets/img/katelyn.jpeg" alt="Photo of Katelyn Dever">
           <h4>Bio</h4>
@@ -149,9 +151,12 @@
 
   <section id="contact">
     
-    <h3 class="title">Contact</h3>
+    <h3 class="title" data-aos="fade-up">Contact</h3>
     <hr>
-    <a href="mailto:katelyndever@gmail.com" id="email">Email Me</a>
+    <div data-aos="fade-up">
+      
+      <a href="mailto:katelyndever@gmail.com" id="email">Email Me</a>
+    </div>
   </section>
 
   <footer>
@@ -163,10 +168,16 @@
       <li><a href="https://twitter.com/KatelynDever"><i class="fab fa-twitter fa-2x"></i></a></li>
     </ul>
   </footer>
+</div><!-- Ends wrapper section -->
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        delay: 200,
+        duration: 1300
+      });
+  </script>
 
-
-</section><!-- Ends wrapper section -->
 </body>
 </html>
 
