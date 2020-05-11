@@ -157,6 +157,17 @@ section h3.title {
 	color: #fff;
 }
 
+.hero ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.hero ul>li {
+	padding: 15px;
+}
+
 .hero .background-image {
 	position: fixed;
 	top: 0;
@@ -171,7 +182,7 @@ section h3.title {
 #greeting {
 	width: 100%;
 	text-align: center;
-	padding: 20px 20%;
+	padding: 20px;
 	font-weight: 400;
 	letter-spacing: .08em;
 	font-size: 40px;
@@ -184,7 +195,6 @@ section h3.title {
 
 .hero a.btn {
 	padding: 20px 50px;
-
 }
 
 .hero-content-area {
@@ -254,6 +264,7 @@ section h3.title {
   position: absolute;
   width: 480px;
   height: 325px;
+  border: 1px solid #1B1B3A;
 }
 
 .text-wrapper {
